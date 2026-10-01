@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Misteriosa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="jogo">
+        <h1>🌲 Aventura Misteriosa</h1>
+
+        <div class="status">
+            <span>❤️ Vidas: <strong id="vidas">3</strong></span>
+            <span>⭐ Pontos: <strong id="pontos">0</strong></span>
+        </div>
+
+        <div class="historia">
+            <h2 id="titulo">A Floresta Misteriosa</h2>
+
+            <p id="texto">
+                Você está caminhando por uma floresta misteriosa.
+                Depois de algum tempo, encontra uma bifurcação.
+                Um caminho leva para uma caverna e o outro para um rio.
+                Qual caminho você vai escolher?
+            </p>
+
+            <div id="opcoes" class="opcoes">
+                <button onclick="escolher(1)">🪨 Entrar na caverna</button>
+                <button onclick="escolher(2)">🌊 Seguir até o rio</button>
+            </div>
+        </div>
+
+        <button id="reiniciar" onclick="reiniciar()" class="reiniciar">
+            🔄 Reiniciar aventura
+        </button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

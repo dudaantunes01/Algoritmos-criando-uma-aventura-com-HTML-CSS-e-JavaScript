@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #071e12,
+        #14532d,
+        #052e16
+    );
+
+    color: white;
+}
+
+.jogo {
+    width: 90%;
+    max-width: 650px;
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #86efac;
+}
+
+.status {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 15px;
+    margin-bottom: 25px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.historia {
+    padding: 25px;
+}
+
+.historia h2 {
+    color: #fde68a;
+    margin-bottom: 15px;
+}
+
+.historia p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    border: none;
+    padding: 15px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background: #22c55e;
+    color: white;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #16a34a;
+    transform: scale(1.03);
+}
+
+.reiniciar {
+    margin-top: 20px;
+    background: #2563eb;
+}
+
+.reiniciar:hover {
+    background: #1d4ed8;
+}
